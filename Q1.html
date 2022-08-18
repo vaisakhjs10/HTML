@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN DETAILS</title>
+<body>
+	<form method="post">
+		<label for="n">Name:</label>
+		<input type="text" maxlength="25" id="n" name="n" placeholder="username" required><br><br>
+		<label for="e">Email:</label>
+		<input type="text" id="e" name="e" required autofocus><br><br>
+		<label for="p">Password:</label>
+		<input type="password" minlength="6" id="p" name="p" required><br><br>
+		<label for="c">Category:</label>
+		<select id="c" name="c">
+			<option value="st">Student</option>
+			<option value="em">Employee</option>
+			<option value="fr" selected>Freelancer</option>
+		</select><br><br>
+		<label for="ed">Event date:</label>
+		<input type="date" id="ed" name="ed" required><br><br>
+		<label>Tickets:</label><br>
+		<input type="radio" name="tkt" value="one">1 ticket<br>
+		<input type="radio" name="tkt" value="two" checked="checked">2 tickets<br>
+		<input type="radio" name="tkt" value="three">3 tickets<br><br>
+		<input type="checkbox" id="op" name="op">
+		<label for="op">Online Payment</label><br><br>
+		<label>Notes:</label><br> 
+		<textarea rows="10" cols="75" name="notes" placeholder="text"></textarea><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<script>
+		document.getElementById("e").defaultValue="test@example.com"
+	</script>
+</body>
+</head>
+</html>
